@@ -1,20 +1,32 @@
 /*  Style page de connexion */
 body {
-	font-family: Arial, sans-serif;
-	background: linear-gradient(to right, #0D47A1, #1976D2);
+    font-family: var(--primaryText);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	margin: 0;
+    background-image: url("../../IMAGES/bgFORMULAIRE\ \(2\).png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+:root{
+    --primaryText : montserrat;
+    --primaryColor : #A10023;
+    
 }
 /* Conteneur principal */
 .container {
 	background-color: white;
 	padding: 30px;
-	border-radius: 10px;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-	width: 380px;
+	border-radius: 16px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    box-shadow: 0px 82px 40px -14px rgba(100, 100, 100, 0.08);
+    width: 380px;
 	text-align: center;
 }
 /* Titre */
@@ -24,25 +36,35 @@ h2 {
 /* Champs de saisie */
 .input-group {
 	text-align: left;
-	margin-bottom: 15px;
 }
 .input-group label {
-	display: block;
+	position: absolute;
 	font-size: 14px;
-	margin-bottom: 5px;
+    z-index: 10000000000;
+    text-align: end;
+    left: 41%;
+    margin: 4px;
+
+	
 }
 .input-group input {
-	width: 100%;
-	padding: 10px;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    padding: 25px;
 	border: 1px solid #ccc;
-	border-radius: 5px;
+    z-index: 2;
 }
 /* Checkbox */
 .checkbox-group {
 	display: flex;
-	align-items: center;
 	font-size: 14px;
+    margin: 0 auto;
+    width: 85%;
 	margin-bottom: 15px;
+    margin-top: 10px;
 }
 .checkbox-group input {
 	margin-right: 10px;
@@ -53,9 +75,10 @@ h2 {
 }
 /* Bouton */
 button {
-	width: 100%;
+	width: 85%;
+    margin: 0 auto;
 	padding: 12px;
-	background-color: #0D47A1;
+	background-color: var(--primaryColor);
 	color: white;
 	border: none;
 	border-radius: 5px;
@@ -64,7 +87,7 @@ button {
 	transition: background 0.3s ease;
 }
 button:hover {
-	background-color: #1565C0;
+	background-color: #4e0011;
 }
 /* Lien de connexion */
 .login-link {
@@ -74,4 +97,52 @@ button:hover {
 .login-link a {
 	color: #1976D2;
 	text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive design pour mobile */
+@media (max-width: 500px) {
+    .container {
+        width: 80%;
+        padding: 10px;
+    }
+    .input-group input {
+        width: 80%;
+
+    }
+    .checkbox-group {
+        width: 50%;
+    }
+    button {
+        width: 100%;
+    }
+
+    .input-group label {
+        left: 15%;
+        margin: 5px;
+    }
+
+    .checkbox-group {
+        width: 100%;
+        margin: 0;
+        margin: 4px 0;
+    }
+
+
+    button {
+        width: 100%;
+    }
+
+    .login-link {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+
+    .login-link a {
+        color: #1976D2;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
 }

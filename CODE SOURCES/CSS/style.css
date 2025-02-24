@@ -1,12 +1,12 @@
 /*  Style page de connexion */
-body {
+#InscriptionPage {
     font-family: var(--primaryText);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	margin: 0;
-    background-image: url("../../IMAGES/bgFORMULAIRE\ \(2\).png");
+    background-image: url("../../IMAGES/Design\ sans\ titre.png");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,6 +16,7 @@ body {
 :root{
     --primaryText : montserrat;
     --primaryColor : #A10023;
+    --secondcolor : #1C1C1C;
     
 }
 /* Conteneur principal */
@@ -78,7 +79,7 @@ button {
 	width: 85%;
     margin: 0 auto;
 	padding: 12px;
-	background-color: var(--primaryColor);
+	background-color: #3829c0;
 	color: white;
 	border: none;
 	border-radius: 5px;
@@ -87,7 +88,7 @@ button {
 	transition: background 0.3s ease;
 }
 button:hover {
-	background-color: #4e0011;
+	background-color: #140a70;
 }
 /* Lien de connexion */
 .login-link {
@@ -144,5 +145,56 @@ button:hover {
         text-decoration: none;
         font-weight: bold;
     }
+
+}
+
+
+
+/* Style de la page d'accueil */
+#HomePage {
+    font-family: var(--primaryText);
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+
+.MenuAside{
+    background-color: #140a70;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+
+}
+
+
+.header{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    width: 100%;
+    height: 80px;
+    background-color: #140a70;
+
+    
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #140a70;
+    border-bottom: 1px solid white;
+}
+
+.logo-container img{
+    width: 250px;
+    height: auto;
+}
+
+
+.search-bar{
+    background-color: white;
 
 }

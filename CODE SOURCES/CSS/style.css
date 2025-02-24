@@ -14,11 +14,17 @@
 }
 
 :root{
-    --primaryText : montserrat;
-    --primaryColor : #A10023;
+    --primaryText : 'montserrat', sans-serif;
+    --primaryColor : #0066DC;
     --secondcolor : #1C1C1C;
     
 }
+
+* {
+    box-sizing: border-box;
+    font-family: var(--primaryText);
+}
+
 /* Conteneur principal */
 .container {
 	background-color: white;
@@ -30,6 +36,18 @@
     width: 380px;
 	text-align: center;
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Titre */
 h2 {
 	margin-bottom: 20px;
@@ -160,12 +178,89 @@ button:hover {
 
 
 .MenuAside{
-    background-color: #140a70;
+    background-color: var(--primaryColor);
     display: flex;
     flex-direction: column;
     width: 300px;
-    height: 100vh;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+nav {
+    padding: 40px 28px;
+    flex-grow: 1;
+}
+
+nav li {
+    padding: 14px 0;
+}
+
+nav a i {
+    color: white;
+    font-size: 1.2em;
+}
+
+nav li a{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    font-size: 1.4em;
+     color: white;
+     font-weight: 200;
+}
+
+.profile {
+    gap: 26px;
+    border-bottom: 1px solid white ;
+}
+
+.profile a {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    padding: 20px 28px;
+}
+
+.profile div {
+    height: 40px;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 999px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+.couleur-theme {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.couleur-theme button {
+    background-color: white;
+    height: 30px;
+    width: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 999px;
+}
+
+.couleur-theme button span {
+    height: 28px;
+    aspect-ratio: 1 / 1;
+    background-color: var(--primaryColor);
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
 }
 
 
@@ -174,7 +269,7 @@ button:hover {
     grid-template-columns: 300px 1fr;
     width: 100%;
     height: 80px;
-    background-color: #140a70;
+    background-color: var(--primaryColor);
 
     
 }
@@ -183,8 +278,9 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
-    background-color: #140a70;
+    height: 100%;
+    padding: 6px 20px;
+    background-color: var(--primaryColor);
     border-bottom: 1px solid white;
 }
 
@@ -194,7 +290,20 @@ button:hover {
 }
 
 
-.search-bar{
+.search-bar {
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    gap: 20px;
+    align-items: center;
+    padding: 0 20px;
+}
 
+.search-bar input {
+    height: 40px;
+    padding: 0 10px;
+}
+
+.search-bar span {
+    font-size: 2.4em;
 }

@@ -1,0 +1,77 @@
+/*  Style page de connexion */
+body {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to right, #0D47A1, #1976D2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+}
+/* Conteneur principal */
+.container {
+	background-color: white;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+	width: 380px;
+	text-align: center;
+}
+/* Titre */
+h2 {
+	margin-bottom: 20px;
+}
+/* Champs de saisie */
+.input-group {
+	text-align: left;
+	margin-bottom: 15px;
+}
+.input-group label {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.input-group input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+/* Checkbox */
+.checkbox-group {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.checkbox-group input {
+	margin-right: 10px;
+}
+.checkbox-group a {
+	color: #1976D2;
+	text-decoration: none;
+}
+/* Bouton */
+button {
+	width: 100%;
+	padding: 12px;
+	background-color: #0D47A1;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+button:hover {
+	background-color: #1565C0;
+}
+/* Lien de connexion */
+.login-link {
+	margin-top: 15px;
+	font-size: 14px;
+}
+.login-link a {
+	color: #1976D2;
+	text-decoration: none;
+}

@@ -549,6 +549,12 @@ nav li a{
     border-bottom: 1px solid white;
   }
 
+  .dark-mode .header {
+    background-color: #1e1e1e !important; 
+    color: white;
+    padding: 0;
+  }
+
   .main-container {
     margin-top: 65px;
   }
@@ -687,6 +693,9 @@ input[type="file"] {
   font-weight: 600;
   margin-top: 10px;
 }
+
+
+/* Responsive design pour  */ 
 
 
 

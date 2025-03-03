@@ -558,12 +558,7 @@ nav li a{
 
   .main-container {
     margin-top: 65px;
-  }
-  
-  
-
-  .hideAside {
-    display: none;
+    display: flex;
   }
 
   .menu {
@@ -589,6 +584,11 @@ nav li a{
     width: 100%;
     background-color: #1a1a1a;
     height: calc(100vh - 65px);
+    display: none;
+  }
+
+  .hideAside {
+    display: flex;
   }
 }
 
@@ -730,9 +730,6 @@ input[type="file"] {
     margin-top: 10%;
     height: fit-content;
     width: 100%;
-  }
-  .MenuAside{
-    display: none;
   }
 
   #form-ajout-fichier button{

@@ -1,7 +1,13 @@
+/* dom */
+const toggleSwitch = document.querySelector('.checkbox');
+const HomePage = document.querySelector('#HomePage');
+const menuAside = document.querySelector('.MenuAside');
+const burgerMenuBtn = document.querySelector('.menu i');
+
+
+
 /* Function pour passer en dark mode */
 function darkMode(){
-    const toggleSwitch = document.querySelector('.checkbox');
-    const HomePage = document.querySelector('#HomePage');
 
     if (localStorage.getItem("darkMode") === "enabled") {
         HomePage.classList.add("dark-mode");
@@ -24,3 +30,9 @@ function darkMode(){
 }
 
 darkMode();
+
+
+burgerMenuBtn.addEventListener('click', () => {
+   menuAside.classList.toggle('hideAside')
+})
+

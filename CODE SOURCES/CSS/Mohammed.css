@@ -6,6 +6,12 @@ body {
     width: 100vw;
 }
 
+h1 {
+    font-weight: 400;
+    padding: 20px 0px;
+
+}
+
 main {
     width: 100%;
     padding: 20px;
@@ -17,8 +23,21 @@ main {
 
 
 @media (max-width: 772px) {
+
     .main-search-bar {
-        display: inline;
-        margin: 0 auto;
+        height: 40px;
+        display: grid;
+        grid-template-columns: 1fr 40px;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .main-search-bar input {
+        height: 100%;
+        padding: 0 20px;
+    }
+
+    .main-search-bar span { 
+        font-size: 2.6em;
     }
 }

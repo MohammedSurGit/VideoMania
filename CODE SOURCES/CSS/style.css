@@ -557,6 +557,10 @@ nav li a{
     height: calc(100vh - 65px);
   }
 
+  .hideAside {
+    display: none;
+  }
+
   .menu {
     display: flex;
     align-items: center;

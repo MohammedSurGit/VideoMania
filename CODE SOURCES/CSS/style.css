@@ -33,7 +33,6 @@
 }
 
 main {
-  background-color: red;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -541,7 +540,7 @@ nav li a{
 }
 
 /* Responsive design pour mobile */
-@media (max-width: 500px) {
+@media (max-width: 772px) {
   .header {
     grid-template-columns: auto 1fr;
     height: 65px;
@@ -551,6 +550,10 @@ nav li a{
 
   .main-container {
     margin-top: 65px;
+  }
+  
+  .MenuAside {
+    height: calc(100vh - 65px);
   }
 
   .menu {

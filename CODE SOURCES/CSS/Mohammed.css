@@ -1,3 +1,24 @@
 .profile a{
     color: white;
 }
+
+body {
+    width: 100vw;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+.main-search-bar {
+    display: none;
+}
+
+
+@media (max-width: 772px) {
+    .main-search-bar {
+        display: inline;
+        margin: 0 auto;
+    }
+}

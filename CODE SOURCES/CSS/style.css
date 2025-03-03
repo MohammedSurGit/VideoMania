@@ -549,6 +549,11 @@ nav li a{
     border-bottom: 1px solid white;
   }
 
+
+  main {
+    height: calc(100vh - 65px);
+  }
+
   .dark-mode .header {
     background-color: #1e1e1e !important; 
     color: white;
@@ -558,12 +563,16 @@ nav li a{
 
   .main-container {
     margin-top: 65px;
+    display: flex;
   }
   
-  
+  .MenuAside {
+    height: calc(100vh - 65px);
+    display: none;
+  }
 
   .hideAside {
-    display: none;
+    display: flex;
   }
 
   .menu {

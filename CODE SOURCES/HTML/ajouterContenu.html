@@ -6,9 +6,10 @@
     <title>Ajouter contenu</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <script src="../JAVASCRIPT/app.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"/>
-    
+
+   
 </head>
 <body id="HomePage">
     <!-- Header qui aura une barre de recherche et une icone recherche à droite-->
@@ -55,10 +56,29 @@
 <main>
     <section id="Container-Ajouter-Contenu">
         <div id="AddFichier">
+            <div id="Icon-Text">
+                <label for="file" class="custom-file-upload">
+                    <span class="material-symbols-outlined">upload</span> <!-- Icône upload -->
+                    <span id="file-label">Choisissez un fichier ou glissez-le ici</span>
+                </label>
+                <input type="file" id="file" name="file" accept="">
+                
+            </div>
             
 
         </div>
         <div id="Description-Fichier">
+
+            <form action="#" id="form-ajout-fichier">
+                <div class="input-group">
+                    <input type="text" id="titre" class="Input-Hover" name="titre" placeholder="Nom du fichier" required >
+                
+                    <input id="description" class="Input-Hover" name="description" placeholder="Description du fichier" required></input>
+                
+                    <input type="text" id="tags" class="Input-Hover" name="tags" placeholder="Lien du fichier" required>
+                </div>
+                <button type="submit">Ajouter</button>
+            </form>
 
 
         </div>

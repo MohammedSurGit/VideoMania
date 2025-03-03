@@ -549,8 +549,15 @@ nav li a{
     border-bottom: 1px solid white;
   }
 
+
   main {
     height: calc(100vh - 65px);
+  }
+
+  .dark-mode .header {
+    background-color: #1e1e1e !important; 
+    color: white;
+    padding: 0;
   }
 
   .main-container {
@@ -589,6 +596,7 @@ nav li a{
   .MenuAside{
     width: 100%;
     background-color: #1a1a1a;
+    height: calc(100vh - 65px);
   }
 }
 
@@ -597,20 +605,111 @@ nav li a{
 #Container-Ajouter-Contenu{
   display: flex;
   flex-direction: row;
+  gap: 80px;
+  padding: 20px;
   height: 100vh;
   margin: 0;
-  background-color: #0056b3;
 }
 
 #AddFichier{
-  background-color: #F0F0F0;
+  background-color: #f0f0f0e9;
   padding: 30px;
-  height: 60%;
-  width: 40%;
+  height: 50%;
+  width: 20%;
   margin-top: 10%;
   margin-left: 5%;
   border-radius: 16px;
   border: 1px solid #E0E0E0;
   box-shadow: 0px 82px 40px -14px rgba(100, 100, 100, 0.08);  
 }
+
+#AddFichier span{
+  cursor: pointer;
+}
+
+#Icon-Text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
+input[type="file"] {
+  display: none; /* Cache l'input file par défaut */
+}
+
+.custom-file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* Style de l'icône Material Symbols */
+.custom-file-upload .material-symbols-outlined {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+#file-label{
+  font-size: 14px;
+  width: 70%;
+  text-align: center;
+}
+
+
+#Description-Fichier{
+  margin-top: 10%;
+  height: fit-content;
+  width: 30%;
+}
+
+#form-ajout-fichier{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.input-group input{
+  font-size: 14px;
+  padding: 40px;
+  
+}
+
+.Input-Hover:hover{
+  border: 1px solid #000000;
+}
+
+
+#form-ajout-fichier button{
+  width: 100%;
+  padding: 12px;
+  background: #007BFF;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+/* Responsive design pour  */ 
+
+
+
+
+
+
+
 

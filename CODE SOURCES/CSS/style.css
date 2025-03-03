@@ -30,10 +30,10 @@
 	background-color: white;
 	padding: 30px;
 	border-radius: 16px;
-    border: 1px solid #E0E0E0;
-    background: #FFF;
-    box-shadow: 0px 82px 40px -14px rgba(100, 100, 100, 0.08);
-    width: 380px;
+  border: 1px solid #E0E0E0;
+  background: #FFF;
+  box-shadow: 0px 82px 40px -14px rgba(100, 100, 100, 0.08);
+  width: 380px;
 	text-align: center;
 }
 
@@ -45,38 +45,99 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 /* Titre */
 h2 {
 	margin-bottom: 20px;
 }
-/* Champs de saisie */
+
+/* Titre du formulaire */
+.form-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Groupes label + input */
 .input-group {
-	text-align: left;
+  text-align: left;
+  position: relative;
 }
+
 .input-group label {
-	position: absolute;
-	font-size: 14px;
-    z-index: 10000000000;
-    text-align: end;
-    left: 41%;
-    margin: 4px;
-
-	
+  color: #333;
+  position: absolute;
+  top : 2px;
+  font-size: 0.9rem;
+    
 }
+
 .input-group input {
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-    display: block;
-    align-items: center;
-    padding: 25px;
-	border: 1px solid #ccc;
-    z-index: 2;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px 0;
+  
 }
 
+/* Case à cocher (uiverse.io) */
+.checkbox-wrapper-46 {
+  text-align: left;
+  position: relative;
+}
+
+
+
+#TextCheckbox {
+  position: absolute;
+}
+
+#TextCheckbox a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+#TextCheckbox a:hover {
+  text-decoration: underline;
+}
+
+/* Bouton "CRÉER UN COMPTE" */
+.form-box button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #007BFF;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.form-box button[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* Lien "Vous avez déjà un compte ?" */
+.login-link {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.login-link a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
 
 /* Bouton */
 
@@ -198,24 +259,29 @@ button:hover {
 /* Responsive design pour mobile */
 @media (max-width: 500px) {
     .container {
-        width: 80%;
-        padding: 10px;
+        width: 100%;
+        padding: 10px 40px;
     }
+
+
     .input-group input {
-        width: 80%;
+        width: 100%;
 
     }
     .checkbox-group {
-        width: 50%;
+        width: 70%;
     }
     button {
         width: 100%;
     }
 
-    .input-group label {
-        left: 15%;
-        margin: 5px;
+    #InscriptionPage{
+      
+      
+
     }
+
+    
 
     .checkbox-group {
         width: 100%;
@@ -243,8 +309,8 @@ button:hover {
 }
 
 
+/*
 
-/* Style de la page d'accueil */
 #HomePage {
     font-family: var(--primaryText);
     margin: 0;
@@ -318,7 +384,7 @@ nav li a{
     justify-content: flex-start;
 }
 
-/* From Uiverse.io by Madflows */ 
+ 
 .toggle-switch {
     position: relative;
     width: 100px;
@@ -428,3 +494,4 @@ nav li a{
 .search-bar span {
     font-size: 2.4em;
 }
+*/

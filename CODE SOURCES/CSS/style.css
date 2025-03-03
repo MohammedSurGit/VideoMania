@@ -309,13 +309,11 @@ button:hover {
 }
 
 
-/*
 
 #HomePage {
     font-family: var(--primaryText);
     margin: 0;
     padding: 0;
-    border: border-box;
 }
 
 
@@ -383,6 +381,33 @@ nav li a{
     display: flex;
     justify-content: flex-start;
 }
+
+
+.dark-mode {
+  background-color:#1e1e1e;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .header {
+  background-color: #1e1e1e !important; 
+  color: white;
+}
+
+.dark-mode .search-bar {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .search-bar input {
+  background-color: #555 !important;
+  color: white;
+}
+
+.dark-mode .search-bar span {
+  color: white;
+}
+
+
 
  
 .toggle-switch {
@@ -494,4 +519,18 @@ nav li a{
 .search-bar span {
     font-size: 2.4em;
 }
-*/
+
+
+/* Responsive design pour mobile */
+
+/* CSS pour la page ajouterContenu */ 
+
+/* Ajout du main de la page ajouterContenu qui doit être au centre de la page et dans le body homepage */
+#AjouterContenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}

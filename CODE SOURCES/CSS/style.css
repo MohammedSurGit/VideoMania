@@ -555,6 +555,10 @@ nav li a{
   
   
 
+  .hideAside {
+    display: none;
+  }
+
   .menu {
     display: flex;
     align-items: center;
